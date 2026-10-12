@@ -1,0 +1,32 @@
+{
+  "name": "poi-onchain",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "The CKB steps behind POI: Proof of Identity, as small runnable examples.",
+  "license": "MIT",
+  "scripts": {
+    "key": "tsx examples/01-key.ts",
+    "faucet": "tsx examples/02-faucet.ts",
+    "read-name": "tsx examples/03-read-name.ts",
+    "pay-by-name": "tsx examples/04-pay-by-name.ts",
+    "check-statements": "tsx examples/05-check-statements.ts",
+    "quantum-name": "tsx examples/06-quantum-name.ts",
+    "register": "tsx examples/07-register.ts",
+    "write-record": "tsx examples/08-write-record.ts",
+    "seal": "tsx examples/09-seal.ts",
+    "mainnet-proof": "tsx examples/10-mainnet-proof.ts",
+    "fiber-link": "tsx examples/11-fiber-link.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ckb-ccc/core": "^1.23.0",
+    "cellula-sdk": "^0.2.1"
+  },
+  "devDependencies": {
+    "@ckb-ccc/connector": "^2.3.2",
+    "@types/node": "^22.20.4",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

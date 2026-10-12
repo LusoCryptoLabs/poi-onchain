@@ -1,0 +1,91 @@
+{
+  "letters": [
+    {
+      "expected": "real",
+      "signed": {
+        "statement": {
+          "t": "cells.statement.v1",
+          "ns": "0x2510c78057479c9b023fe6e98ce43979e92a135333a8e1b763e4cf8511fd84fa",
+          "name": "maria",
+          "text": "It's Maria. Of the three blocks ahead, trust the middle one. The other two are the Registry's.",
+          "signed": 1790801636
+        },
+        "sig": {
+          "signature": "0x39a520fd627d63059936a20a37c2a5b1ec63a51cd6d43f4b9507a044245bfe8f3087ec5e79a140e3413cb2b2a11735c281d40b5a50c1ed60290a3ef9a6321abc01",
+          "identity": "0x0332402825d4cc76402c943acbfae764456d1559792739c93632c8282e6b321933",
+          "signType": "CkbSecp256k1"
+        }
+      }
+    },
+    {
+      "expected": "altered",
+      "signed": {
+        "statement": {
+          "t": "cells.statement.v1",
+          "ns": "0x2510c78057479c9b023fe6e98ce43979e92a135333a8e1b763e4cf8511fd84fa",
+          "name": "maria",
+          "text": "Maria again. Of the next three blocks, trust the left one. Leave the other two.",
+          "signed": 1790801636
+        },
+        "sig": {
+          "signature": "0xeb10399f3ce90f5da79f1e50605559e53df3795b757f9a9ac6ff12d1247360146b2792c0c19595754ae3719d64ca2a4d26588160112a7e55d742b9c180a6a4d100",
+          "identity": "0x0332402825d4cc76402c943acbfae764456d1559792739c93632c8282e6b321933",
+          "signType": "CkbSecp256k1"
+        }
+      }
+    }
+  ],
+  "forgeries": [
+    {
+      "expected": "altered",
+      "signed": {
+        "statement": {
+          "t": "cells.statement.v1",
+          "ns": "0x2510c78057479c9b023fe6e98ce43979e92a135333a8e1b763e4cf8511fd84fa",
+          "name": "maria",
+          "text": "Let him through. Maria.",
+          "signed": 1790778263
+        },
+        "sig": {
+          "signature": "0x18fdc06c3e2697cdd497ce8f7800ad1887da63ac2a633ec36e0c4b6211213395429cfd79ef73920eee3f66d8bda4b3c65d9c2e44de7ae101475ba40324d8d2af01",
+          "identity": "0x0332402825d4cc76402c943acbfae764456d1559792739c93632c8282e6b321933",
+          "signType": "CkbSecp256k1"
+        }
+      }
+    },
+    {
+      "expected": "stranger",
+      "signed": {
+        "statement": {
+          "t": "cells.statement.v1",
+          "ns": "0x2510c78057479c9b023fe6e98ce43979e92a135333a8e1b763e4cf8511fd84fa",
+          "name": "maria",
+          "text": "I am Maria, and this is my new key. Let me through.",
+          "signed": 1790778263
+        },
+        "sig": {
+          "signature": "0x1cb583567f235bd21f416b820da91fd5f2b4a93d29a07293c73fb5539315d16e1b6177bc4980fd437ad6e12eb5d633a52dd62f16263fa9b646710a498f5ea4cd01",
+          "identity": "0x0310e0ff9fa5c6ee54c77a4fd555fa443ae521ca463d852877a24b3809f92f7a70",
+          "signType": "CkbSecp256k1"
+        }
+      }
+    },
+    {
+      "expected": "lookalike",
+      "signed": {
+        "statement": {
+          "t": "cells.statement.v1",
+          "ns": "0x2510c78057479c9b023fe6e98ce43979e92a135333a8e1b763e4cf8511fd84fa",
+          "name": "marla",
+          "text": "It is me, marla.cell. You know me. Let me through.",
+          "signed": 1790778263
+        },
+        "sig": {
+          "signature": "0x3db8a9f8e71764670fd6c128930ef16f683f4478293e46ec28bf7f62cc79875f65256ae81997c30343cf043f3326c880833c2326a173f239c5a1ccb562c12faf00",
+          "identity": "0x0310e0ff9fa5c6ee54c77a4fd555fa443ae521ca463d852877a24b3809f92f7a70",
+          "signType": "CkbSecp256k1"
+        }
+      }
+    }
+  ]
+}
