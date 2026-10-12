@@ -28,8 +28,9 @@ npm run read-name      # any example below
 | `09-seal` | | medals written on a name as a record sealed by the game, and why a copy does not check |
 | `10-mainnet-proof` | | proving a mainnet name by signing words with it, checked on mainnet |
 | `11-fiber-link` | 4 | a name's Fiber pay link, checked before paying: published by the owner now, invoice signed by the payee |
+| `12-joyid-subkey` | | a JoyID passkey from a second device (a sub key), tied to its account through JoyID's CoTA aggregator |
 
-Arguments: `read-name`, `pay-by-name` and `fiber-link` take a name (`maria` by default); `register <name>`; `write-record <name> <key> <text>`; `seal [name]`; `mainnet-proof <name> [climb-name]`.
+Arguments: `read-name`, `pay-by-name` and `fiber-link` take a name (`maria` by default); `register <name>`; `write-record <name> <key> <text>`; `seal [name]`; `mainnet-proof <name> [climb-name]`; `joyid-subkey [<address> <public-key>]`.
 
 ## Notes
 
@@ -38,6 +39,7 @@ Arguments: `read-name`, `pay-by-name` and `fiber-link` take a name (`maria` by d
 - Records live in the transaction's witness: writing one costs a network fee and holds no CKB.
 - The commit of a registration must be a minute old by the chain's median time, which trails real time; in practice the wait is a few minutes.
 - A statement names its deployment (`ns`), so words signed for testnet do not check on mainnet.
+- A JoyID passkey added on another device signs as a sub key: the signature names the key, not the account. `12-joyid-subkey` ties such a key to its account through JoyID's CoTA aggregator.
 
 ## License
 

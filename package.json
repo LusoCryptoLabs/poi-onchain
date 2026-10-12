@@ -17,6 +17,7 @@
     "seal": "tsx examples/09-seal.ts",
     "mainnet-proof": "tsx examples/10-mainnet-proof.ts",
     "fiber-link": "tsx examples/11-fiber-link.ts",
+    "joyid-subkey": "tsx examples/12-joyid-subkey.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
